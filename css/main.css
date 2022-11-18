@@ -73,11 +73,25 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /*outline: 2px solid red;*/
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -120,14 +134,17 @@ body {
   border-color: transparent;
   transition: background-color 250ms var(--timing-function);
 }
-.btn:hover, .btn:focus {
-  background-color: var(--accent-secondary-color);
-}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -180,7 +197,6 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
@@ -224,14 +240,8 @@ body {
   cursor: pointer;
   padding: 12px 2px 12px 42px;
 }
-
-.modal-input:focus,
-.modal-text:focus {
+.modal-input:focus {
   border-color: var(--accent-color);
-}
-
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
 }
 
 .modal-icon {
@@ -239,6 +249,9 @@ body {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+}
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-text {
@@ -254,11 +267,17 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
+.modal-text:focus {
+  border-color: var(--accent-color);
+}
 
 .modal-button {
   display: block;
   padding: 10px 52px;
   margin: 0 auto;
+}
+.modal-button:hover, .modal-button:focus {
+  background-color: var(--accent-secondary-color);
 }
 
 .policy-field {
@@ -280,15 +299,14 @@ body {
   margin-right: 7px;
   transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
+.policy-input:checked + .policy-label > .policy-icon {
+  background-color: var(--accent-color);
+  border: #2196f3;
+}
 
 .policy-link {
   color: var(--accent-color);
   margin-left: 3px;
-}
-
-.policy-input:checked + .policy-label > .policy-icon {
-  background-color: var(--accent-color);
-  border: #2196f3;
 }
 
 .header {
@@ -396,15 +414,35 @@ body {
   padding: 10px 32px;
   margin-top: 30px;
 }
+.hero__button:hover, .hero__button:focus {
+  background-color: var(--accent-secondary-color);
+}
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .card-list__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    max-width: 270px;
+  }
+}
+
 .card-list__wrapper {
+  width: 100%;
   display: flex;
-  width: 270px;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -419,6 +457,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-dark-color);
+}
+@media screen and (max-width: 480px) {
+  .card-list__title {
+    text-align: center;
+  }
 }
 
 .card-list__text {
@@ -662,6 +705,9 @@ body {
   align-items: center;
   text-align: center;
 }
+.subscribe__button:hover, .subscribe__button:focus {
+  background-color: var(--accent-secondary-color);
+}
 
 .subscribe__icon {
   vertical-align: middle;
@@ -877,6 +923,9 @@ body {
   font-style: normal;
   align-items: center;
   text-align: center;
+}
+.subscribe__button:hover, .subscribe__button:focus {
+  background-color: var(--accent-secondary-color);
 }
 
 .subscribe__icon {
