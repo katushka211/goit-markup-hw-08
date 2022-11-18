@@ -1,0 +1,28 @@
+.card-list {
+  display: flex;
+  gap: 30px;
+}
+
+.card-list__wrapper {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--background-secondary-light);
+  border-radius: 4px;
+}
+
+.card-list__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-dark-color);
+}
+
+.card-list__text {
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
