@@ -515,10 +515,11 @@ body {
 
 .work {
   padding-top: 0px;
+  display: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .work {
-    display: none;
+    display: block;
   }
 }
 
