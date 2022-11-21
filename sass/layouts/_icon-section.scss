@@ -7,12 +7,10 @@
 }
 
 .icon-list__item {
-  @include mobile {
-    width: calc((100% - (30px * 2)) / 2);
-  }
+  width: calc((100% - 30px) / 2);
 
   @include tablet {
-    width: calc((100% - (30px * 3)) / 3);
+    width: calc((100% - (30px * 2)) / 3);
   }
 
   @include desktop {
