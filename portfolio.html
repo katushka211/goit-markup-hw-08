@@ -30,10 +30,10 @@
           >
           <ul class="list nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link link current" href="./index.html">Студія</a>
+              <a class="nav-list__link link" href="./index.html">Студія</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link link" href="./portfolio.html">Портфоліо</a>
+              <a class="nav-list__link link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link link" href="#">Контакти</a>
@@ -74,10 +74,12 @@
             </button>
             <ul class="list mob-menu-list">
               <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link mob-current" href="./index.html">Студія</a>
+                <a class="mob-menu-list__link link" href="./index.html">Студія</a>
               </li>
               <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link" href="./portfolio.html">Портфоліо</a>
+                <a class="mob-menu-list__link link mob-current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="mob-menu-list__item">
                 <a class="mob-menu-list__link link" href="#">Контакти</a>
@@ -138,12 +140,32 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work1.jpg" alt="Екран з картками співробітників" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work1.jpg 1x, ./images/work1-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work1-tab.jpg 1x, ./images/work1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work1-mob.jpg 1x, ./images/work1-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/work1.jpg"
+                      alt="Екран з картками співробітників"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">Технокряк</h2>
@@ -154,12 +176,32 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work2.jpg" alt="Два баскетболисти з м'ячем" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work2.jpg 1x, ./images/work2-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work2-tab.jpg 1x, ./images/work2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work2-mob.jpg 1x, ./images/work2-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/work2.jpg"
+                      alt="Логотип ресторану морської кухні"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">
@@ -172,16 +214,32 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img
-                    src="./images/work3.jpg"
-                    alt="Логотип ресторану морської кухні"
-                    width="370"
-                  />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work3.jpg 1x, ./images/work3-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work3-tab.jpg 1x, ./images/work3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work3-mob.jpg 1x, ./images/work3-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/work3.jpg"
+                      alt="Логотип ресторану морської кухні"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">Ресторан <span lang="en">Seafood</span></h2>
@@ -192,12 +250,28 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work4.jpg" alt="Навушники" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work4.jpg 1x, ./images/work4-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work4-tab.jpg 1x, ./images/work4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work4-mob.jpg 1x, ./images/work4-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/work4.jpg" alt="Навушники" width="450" />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">Проєкт <span lang="en">Prime</span></h2>
@@ -208,12 +282,28 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work5.jpg" alt="Дві коробки" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work5.jpg 1x, ./images/work5-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work5-tab.jpg 1x, ./images/work5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work5-mob.jpg 1x, ./images/work5-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/work5.jpg" alt="Дві коробки" width="450" />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">Проєкт <span lang="en">Boxes</span></h2>
@@ -224,12 +314,28 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work6.jpg" alt="Комп'ютер" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work6.jpg 1x, ./images/work6-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work6-tab.jpg 1x, ./images/work6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work6-mob.jpg 1x, ./images/work6-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/work6.jpg" alt="Комп'ютер" width="450" />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 lang="en" class="cardset__title">Inspiration has no Borders</h2>
@@ -240,12 +346,28 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work7.jpg" alt="Відкрита книга" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work7.jpg 1x, ./images/work7-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work7-tab.jpg 1x, ./images/work7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work7-mob.jpg 1x, ./images/work7-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/work7.jpg" alt="Відкрита книга" width="450" />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">Видання <span lang="en">Limited Edition</span></h2>
@@ -256,12 +378,28 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work8.jpg" alt="Етикетка" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work8.jpg 1x, ./images/work8-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work8-tab.jpg 1x, ./images/work8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work8-mob.jpg 1x, ./images/work8-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/work8.jpg" alt="Етикетка" width="450" />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title">Проєкт <span lang="en">LAB</span></h2>
@@ -272,12 +410,28 @@
             <li class="cardset__item">
               <a href="" class="cardset__link link">
                 <div class="cardset__wrap">
-                  <img src="./images/work9.jpg" alt="Робота на ноутбуці" width="370" />
-                  <p class="cardset__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="./images/work9.jpg 1x, ./images/work9-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/work9-tab.jpg 1x, ./images/work9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/work9-mob.jpg 1x, ./images/work9-mob-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/work9.jpg" alt="Робота на ноутбуці" width="450" />
+                  </picture>
+                  <div class="cardset-hover-box">
+                    <p class="cardset__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="cardset__box">
                   <h2 class="cardset__title" lang="en">Growing Business</h2>
