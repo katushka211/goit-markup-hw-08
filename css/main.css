@@ -363,6 +363,9 @@ body.modal-open {
   margin-left: 3px;
 }
 
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 21px;
