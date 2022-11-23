@@ -31,6 +31,10 @@
   @include tablet {
     margin-bottom: 60px;
   }
+  @include desktop {
+    text-align: left;
+    margin-bottom: 0px;
+  }
 }
 
 .address-list__link {
@@ -54,9 +58,9 @@
     color: var(--accent-color);
   }
   margin-top: 8px;
-  // @media screen and (min-width: 480px) {
-  //   // margin-top: 8px;
-  // }
+  @include desktop {
+    margin-top: 9px;
+  }
 }
 
 .join {
@@ -105,6 +109,9 @@
   color: var(--primary-light-color);
   margin-bottom: 20px;
   align-items: start;
+  @include desktop {
+    text-align: left;
+  }
 }
 .subscribe__form {
   @media screen and(min-width:1200px) {

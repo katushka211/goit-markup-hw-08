@@ -12,7 +12,10 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 
 .header__logo--dark {
