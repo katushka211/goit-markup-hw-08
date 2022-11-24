@@ -1,12 +1,14 @@
 .header {
   border-bottom: 1px solid var(--border-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
   @include tablet {
     padding-top: 21px;
     padding-bottom: 21px;
-    height: 80px;
   }
   @include desktop {
     padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -19,8 +21,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 15px;
-  // display: none;
 }
 
 .nav-list {
@@ -133,6 +133,9 @@
   position: fixed;
   z-index: 1;
   background-color: #fff;
+  @include tablet {
+    display: none;
+  }
 }
 
 .menu-open {
